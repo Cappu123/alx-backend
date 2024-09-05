@@ -56,7 +56,7 @@ class BaseCaching():
 
 ### 0. Basic dictionary
 
-Create a `class BasicCache` that inherits from `BaseCaching` and is a caching system:
+[0-basic_cache.py](https://github.com/Cappu123/alx-backend/blob/master/0x01-caching/0-basic_cache.py) Contains a `class BasicCache` that inherits from `BaseCaching` and is a caching system:
 
 * You must use `self.cache_data` - dictionary from the parent class `BaseCaching`
 * This caching system doesn’t have limit
@@ -116,7 +116,7 @@ guillaume@ubuntu:~/0x01$
 
 ### 1. FIFO caching
 
-Create a class FIFOCache that inherits from BaseCaching and is a caching system:
+[1-fifo_cache.py](https://github.com/Cappu123/alx-backend/blob/master/0x01-caching/1-fifo_cache.py) Containes a class FIFOCache that inherits from BaseCaching and is a caching system:
 
 * You must use `self.cache_data` - dictionary from the parent class `BaseCaching`
 * You can overload `def __init__(self):` but don’t forget to call the parent init: `super().__init__()`
@@ -179,7 +179,7 @@ guillaume@ubuntu:~/0x01$
 
 ### 2. LIFO caching
 
-Create a class LIFOCache that inherits from BaseCaching and is a caching system:
+[2-lifo_cache.py](https://github.com/Cappu123/alx-backend/blob/master/0x01-caching/2-lifo_cache.py) Contains a class LIFOCache that inherits from BaseCaching and is a caching system:
 
 * You must use `self.cache_data` - dictionary from the parent class `BaseCaching`
 * You can overload `def __init__(self):` but don’t forget to call the parent init: `super().__init__()`
@@ -190,8 +190,8 @@ Create a class LIFOCache that inherits from BaseCaching and is a caching system:
                 * you must discard the first item put in cache (FIFO algorithm)
                 * you must print `DISCARD:` with the `key` discarded and following by a new line
 * `def get(self, key):`
-        * Must return the value in `self.cache_data` linked to `key`.
-        * If `key` is `None` or if the `key` doesn’t exist in `self.cache_data`, return `None`.
+	* Must return the value in `self.cache_data` linked to `key`.
+	* If `key` is `None` or if the `key` doesn’t exist in `self.cache_data`, return `None`.
 
 
 
@@ -251,7 +251,7 @@ guillaume@ubuntu:~/0x01$
 
 ### 3. LRU caching
 
-Create a class `LRUCache` that inherits from `BaseCaching` and is a caching system:
+[3-lru_cache.py](https://github.com/Cappu123/alx-backend/blob/master/0x01-caching/3-lru_cache.py) Contains a class `LRUCache` that inherits from `BaseCaching` and is a caching system:
 
 * You must use `self.cache_data` - dictionary from the parent class `BaseCaching`
 * You can overload `def __init__(self):` but don’t forget to call the parent init: `super().__init__()`
@@ -262,8 +262,8 @@ Create a class `LRUCache` that inherits from `BaseCaching` and is a caching syst
                 * you must discard the first item put in cache (FIFO algorithm)
                 * you must print `DISCARD:` with the `key` discarded and following by a new line
 * `def get(self, key):`
-        * Must return the value in `self.cache_data` linked to `key`.
-        * If `key` is `None` or if the `key` doesn’t exist in `self.cache_data`, return `None`.
+	* Must return the value in `self.cache_data` linked to `key`.
+	* If `key` is `None` or if the `key` doesn’t exist in `self.cache_data`, return `None`.
 
 ```
 guillaume@ubuntu:~/0x01$ cat 3-main.py
@@ -359,7 +359,7 @@ guillaume@ubuntu:~/0x01$
 ```
 ### 4. MRU Caching
 
-Create a class `MRUCache` that inherits from `BaseCaching` and is a caching system:
+[4-mru_cache.py](https://github.com/Cappu123/alx-backend/blob/master/0x01-caching/4-mru_cache.py) Contains a class `MRUCache` that inherits from `BaseCaching` and is a caching system:
 
 * You must use `self.cache_data` - dictionary from the parent class `BaseCaching`
 * You can overload `def __init__(self):` but don’t forget to call the parent init: `super().__init__()`
@@ -370,8 +370,8 @@ Create a class `MRUCache` that inherits from `BaseCaching` and is a caching syst
                 * you must discard the first item put in cache (FIFO algorithm)
                 * you must print `DISCARD:` with the `key` discarded and following by a new line
 * `def get(self, key):`
-        * Must return the value in `self.cache_data` linked to `key`.
-        * If `key` is `None` or if the `key` doesn’t exist in `self.cache_data`, return `None`.
+	* Must return the value in `self.cache_data` linked to `key`.
+	* If `key` is `None` or if the `key` doesn’t exist in `self.cache_data`, return `None`.
 
 ```
 guillaume@ubuntu:~/0x01$ cat 4-main.py
@@ -466,9 +466,9 @@ K: K
 guillaume@ubuntu:~/0x01$
 ```
 
-5. LFU caching
+### 5. LFU caching
 
-Create a class `LFUCache` that inherits from `BaseCaching` and is a caching system:
+[100-lfu_cache.py](https://github.com/Cappu123/alx-backend/blob/master/0x01-caching/100-lfu_cache.py)Contains a class `LFUCache` that inherits from `BaseCaching` and is a caching system:
 
 * You must use `self.cache_data` - dictionary from the parent class `BaseCaching`
 * You can overload `def __init__(self):` but don’t forget to call the parent init: `super().__init__()`
@@ -479,8 +479,8 @@ Create a class `LFUCache` that inherits from `BaseCaching` and is a caching syst
                 * you must discard the first item put in cache (FIFO algorithm)
                 * you must print `DISCARD:` with the `key` discarded and following by a new line
 * `def get(self, key):`
-        * Must return the value in `self.cache_data` linked to `key`.
-        * If `key` is `None` or if the `key` doesn’t exist in `self.cache_data`, return `None`.
+	* Must return the value in `self.cache_data` linked to `key`.
+	* If `key` is `None` or if the `key` doesn’t exist in `self.cache_data`, return `None`.
 
 ```
 guillaume@ubuntu:~/0x01$ cat 100-main.py
