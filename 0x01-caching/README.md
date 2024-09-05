@@ -114,7 +114,7 @@ Street
 guillaume@ubuntu:~/0x01$ 
 ```
 
-1. FIFO caching
+### 1. FIFO caching
 
 Create a class FIFOCache that inherits from BaseCaching and is a caching system:
 
@@ -177,9 +177,9 @@ guillaume@ubuntu:~/0x01$
 
 ```
 
-2. LIFO caching
+### 2. LIFO caching
 
-Create a class FIFOCache that inherits from BaseCaching and is a caching system:
+Create a class LIFOCache that inherits from BaseCaching and is a caching system:
 
 * You must use `self.cache_data` - dictionary from the parent class `BaseCaching`
 * You can overload `def __init__(self):` but don’t forget to call the parent init: `super().__init__()`
@@ -249,7 +249,7 @@ guillaume@ubuntu:~/0x01$
 
 ```
 
-3. LRU caching
+### 3. LRU caching
 
 Create a class `LRUCache` that inherits from `BaseCaching` and is a caching system:
 
@@ -357,7 +357,7 @@ J: J
 K: K
 guillaume@ubuntu:~/0x01$ 
 ```
-## 4.MRU Caching
+### 4. MRU Caching
 
 Create a class `MRUCache` that inherits from `BaseCaching` and is a caching system:
 
