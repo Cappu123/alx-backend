@@ -468,7 +468,7 @@ guillaume@ubuntu:~/0x01$
 
 ### 5. LFU caching
 
-[100-lfu_cache.py](https://github.com/Cappu123/alx-backend/blob/master/0x01-caching/100-lfu_cache.py)Contains a class `LFUCache` that inherits from `BaseCaching` and is a caching system:
+[100-lfu_cache.py](https://github.com/Cappu123/alx-backend/blob/master/0x01-caching/100-lfu_cache.py) Contains a class `LFUCache` that inherits from `BaseCaching` and is a caching system:
 
 * You must use `self.cache_data` - dictionary from the parent class `BaseCaching`
 * You can overload `def __init__(self):` but don’t forget to call the parent init: `super().__init__()`
